@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex VueJS</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body></body>
+  <header>
+    <img src="../imgs/pokemon-logo.png" alt="Pokemon Logo" class="logo">
+    <h1>Pokedex VueJS</h1>
+    <input type="text" id="searchBar" placeholder="Busca un pokemon usando el nombre o el numero" > <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button><br><br>
+    <button id="limpiarCache">Limpiar localStorage</button>
+    
+
+  </header>
+  
+  <main>
+    <section id="pokemon-grid" class="grid-container">
+      <!-- Aca se muestran las tarjetas de pokemon dinamicamente.-->
+    </section>
+  </main>
+
+  <!-- Modal y Overlay -->
+  <div id="modal-overlay" class="modal-overlay" style="display: none;"></div>
+  <div id="pokemon-modal" class="modal" style="display: none;">
+    <!-- se muestran los detalles del pokemon seleccionado -->
+  </div>
+
+  <h2 id="h2-favoritos" >Pokémon Favoritos</h2>
+  <div id="favoritos-grid" class="favoritos-container">
+  <div id="pokemon-card" ></div>
+</div>
+
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
+</html>

@@ -1,0 +1,137 @@
+/*Aca se agrega estilo a toda la parte general de la pagina ya sea secciones, cuerpo, encabezado , etc.*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: rgb(255,51,0);
+background: linear-gradient(90deg, rgba(255,51,0,1) 0%, rgba(255,162,0,1) 50%, rgba(255,51,0,1) 100%);
+    color: white;
+    text-align: center;
+    
+  }
+  
+  header {
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 300px;
+    margin-right:20px;
+   
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  input[type="text"] {
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position:relative;
+  }
+
+  .favoritos-container
+  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position:relative;
+  }
+
+
+  .pokemon-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .pokemon-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .pokemon-card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .pokemon-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .favorito
+  {
+  background:white;
+  border:transparent;
+  cursor: pointer;
+  }
+
+  #searchBar
+  {
+    margin-left:50px;
+  }
+  .search
+  {
+    font-size:20px;
+    border:transparent;
+    background:transparent ;
+    margin:5px 30px 0px 10px;
+    margin-top:10px;
+    cursor:pointer;
+  }
+
+  
+  #limpiarCache {
+    box-shadow: 0px 10px 6px 0px #c45127;
+    background:linear-gradient(to bottom, #f2c913 5%, #f2ab1e 100%);
+    background-color:#f2c913;
+    border-radius:6px;
+    border:2px solid #e65f44;
+    display:inline-block;
+    cursor:pointer;
+    color:#c92200;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:10px 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ded17c;
+
+  }
+  #limpiarCache:hover {
+    background:linear-gradient(to bottom, #f2ab1e 5%, #f2c913 100%);
+    background-color:#f2ab1e;
+  }
+  #limpiarCache:active {
+    position:relative;
+    top:1px;
+  }
+  
+          
+
+
+  

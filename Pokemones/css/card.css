@@ -1,0 +1,178 @@
+/*Aca se agregan estilos pertenecientes a el modal que se centra y se muestra en toda la pagina,
+y que trae todo los datos necesarios para mostrar en la api.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.pokemon-image {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    padding: 10px;
+    margin-bottom: 10px;
+    position:absolute;
+    top:-50px;
+    right:145px;
+    box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.75);
+
+}
+
+h2 {
+    display:none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top:50px;
+}
+
+.card-body {
+    text-align: left;
+    margin-top:50px;
+}
+
+.types, .abilities {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.type, .ability {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.type.grass {
+    background-color: #78C850;
+}
+
+.type.poison {
+    background-color: #A040A0;
+}
+
+.ability {
+    background-color: #32CD32;
+    color: black;
+    border: 2px solid #32CD32;
+    border-radius: 20px;
+}
+
+p
+{
+    padding:10px;
+    border-bottom:1px solid black;
+}
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* Fondo blanco para el modal */
+    color: black; /* Texto en color negro para buena visibilidad */
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Asegurar una fuente legible */
+  }
+
+  /* Fondo del modal (overlay) */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    z-index: 999;
+  }
+  
+  .type {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white; /* Asegurar texto blanco para buen contraste */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para cada tipo de Pokémon */
+.type.grass {
+    background-color: #78C850;
+}
+
+.type.poison {
+    background-color: #A040A0;
+}
+
+.type.fire {
+    background-color: #F08030;
+}
+
+.type.water {
+    background-color: #6890F0;
+}
+
+.type.electric {
+    background-color: #F8D030;
+}
+
+.type.ice {
+    background-color: #98D8D8;
+}
+
+.type.fighting {
+    background-color: #C03028;
+}
+
+.type.flying {
+    background-color: #A890F0;
+}
+
+.type.bug {
+    background-color: #A8B820;
+}
+
+.type.psychic {
+    background-color: #F85888;
+}
+
+.type.rock {
+    background-color: #B8A038;
+}
+
+.type.ground {
+    background-color: #E0C068;
+}
+
+.type.dragon {
+    background-color: #7038F8;
+}
+
+.type.dark {
+    background-color: #705848;
+}
+
+.type.steel {
+    background-color: #B8B8D0;
+}
+
+.type.fairy {
+    background-color: #EE99AC;
+}
+
+.type.normal
+{
+    background-color: black;
+}
+
